@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Hakimi Takwa</title>
+    <style>
+        /* Réinitialisation des styles par défaut */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 1rem;
+        }
+        
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        
+        .cv-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .cv-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cv-title {
+            font-size: 1.5rem;
+            color: #777;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cv-section {
+            margin-bottom: 2rem;
+        }
+        
+        .cv-section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .cv-section-content {
+            margin-left: 1rem;
+            list-style-type: disc;
+        }
+        
+        .cv-section-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cv-section-content span {
+            font-weight: bold;
+        }
+        
+        /* Style pour les compétences */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+        }
+        
+        .skill {
+            width: calc(33.33% - 1rem);
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        
+        /* Style pour la section projets */
+        .project {
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-description {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Style pour les langages de programmation */
+        .programming-languages-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+        }
+        
+        .programming-language {
+            width: calc(20% - 1rem);
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <header class="cv-header">
+            <h1 class="cv-name">Hakimi Takwa</h1>
+            <p class="cv-title">Informaticienne</p>
+        </header>
+        
+        <section class="cv-section">
+            <h2 class="cv-section-title">Expérience professionnelle</h2>
+            <ul class="cv-section-content">
+                <li>
+                    <span>Nom de l'entreprise :</span> ACME Technologies
+                    <span>Période :</span> Janvier 2018 - Présent
+                </li>
+                <li>
+                    <span>Poste :</span> Développeuse Web
+                    <span>Description :</span> Création et maintenance de sites web pour les clients de l'agence. Collaboration avec les designers pour traduire les maquettes en sites web fonctionnels. Développement de fonctionnalités interactives et optimisation des performances pour assurer une expérience utilisateur fluide.
+                </li>
+            </ul>
+        </section>
+        
+        <section class="cv-section">
+            <h2 class="cv-section-title">Formation</h2>
+            <ul class="cv-section-content">
+                <li>
+                    <span>Université :</span> Université XYZ
+                    <span>Période :</span> Septembre 2014 - Juin 2017
+                </li>
+                <li>
+                    <span>Diplôme :</span> Licence en Informatique
+                </li>
+            </ul>
+        </section>
+        
+        <section class="cv-section">
+            <h2 class="cv-section-title">Compétences</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Langages de programmation</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Frameworks et bibliothèques</h3>
+                    <ul>
+                        <li>Spring Boot</li>
+                        <li>React</li>
+                        <li>Angular</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Bases de données</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Oracle</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Outils de développement</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>Visual Studio Code</li>
+                        <li>Eclipse</li>
+                        <li>IntelliJ IDEA</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cv-section">
+            <h2 class="cv-section-title">Projets</h2>
+            <div class="project">
+                <h3 class="project-title">Système de gestion de bibliothèque</h3>
+                <p class="project-description">Un système web permettant la gestion des livres, des emprunts et des membres d'une bibliothèque. Développé avec Java et Spring Boot.</p>
+            </div>
+            <div class="project">
+                <h3 class="project-title">Application de réservation de vols</h3>
+                <p class="project-description">Une application web permettant aux utilisateurs de rechercher, réserver et gérer leurs vols. Développée avec Angular et Node.js.</p>
+            </div>
+        </section>
+        
+        <section class="cv-section">
+            <h2 class="cv-section-title">Langages de programmation maîtrisés</h2>
+            <div class="programming-languages-container">
+                <div class="programming-language">Java</div>
+                <div class="programming-language">C++</div>
+                <div class="programming-language">Python</div>
+                <div class="programming-language">JavaScript</div>
+                <div class="programming-language">HTML/CSS</div>
+            </div>
+        </section>
+        
+        <section class="cv-section">
+            <h2 class="cv-section-title">Langues</h2>
+            <ul class="cv-section-content">
+                <li>Français (langue maternelle)</li>
+                <li>Anglais (courant)</li>
+                <li>Arabe (courant)</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
